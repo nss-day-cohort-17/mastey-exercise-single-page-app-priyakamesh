@@ -3,6 +3,8 @@ var inventory = [];
 var carCard = "";
 var descript=[];
 var currentCarcardIndex ;
+var colorName = "green"
+
 
 
 loadInventory();
@@ -37,14 +39,15 @@ function populatePage (e) {
   for(var i=0; i < inventory.length; i++ ){
   document.getElementsByClassName("infoList")[i].addEventListener("click", (function (x) {
     return function(){
-      changeValue(x)
+      changeValue(x,colorName)
       currentCarcardIndex = x
       console.log(x)
     }
-
   })(i))
 
  }
+ kbevt()
+
 
  }
 
@@ -54,14 +57,19 @@ function reset() {
   for (var i=0; i < mainContent.childNodes.length; i++){
     if (mainContent.childNodes[i].classList.contains("newClass")) {
       document.getElementById("carCard"+i).classList.remove("newClass")
+      document.getElementById("carCard"+currentCarcardIndex).style.backgroundColor = "#f48042";
+
     }
   }
 }
 
 
+//function to change the background-color
+
+
 // function to change the border thickness and background color
 
-function changeValue (currentCarcardIndex) {
+function changeValue (currentCarcardIndex, colorName) {
   reset()
   document.getElementById("carCard"+currentCarcardIndex).classList.toggle("newClass")
   document.getElementById("input").value = ""
@@ -69,13 +77,14 @@ function changeValue (currentCarcardIndex) {
   document.getElementById("input").focus()
 
 
+  document.getElementById("carCard"+currentCarcardIndex).style.backgroundColor = colorName;
 
 }
 //keyboard event for editing the description
 
 function kbevt () {
 
-  document.getElementById("input").addEventListener("keydown", function (){
+  document.getElementById("input").addEventListener("keyup", function (){
      descript[currentCarcardIndex] = inventory[currentCarcardIndex].description
 
       // console.log(currentCarcard)
@@ -86,4 +95,3 @@ function kbevt () {
 
   })
 }
-kbevt()

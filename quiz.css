@@ -57,6 +57,6 @@ li:last-child {
    border: 2px solid black;
 }
 .newClass {
-  background-color:   #efefef;
+  /*background-color:   #efefef;*/
   border: 5px solid black;
 }
