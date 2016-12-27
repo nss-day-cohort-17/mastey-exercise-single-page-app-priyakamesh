@@ -1,0 +1,62 @@
+body {
+  background-image: url("")
+  }
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+li:last-child {
+    float: right;
+
+}
+#mainContent {
+  margin-left: 10em;
+}
+#carCard0 {
+
+
+  text-align: center;
+  margin: 1px 1px;
+  padding: 0;
+  line-height: 100%;
+}
+
+#carCard1 {
+  /*width: 30%;*/
+  /*display: inline-block;*/
+
+  text-align: center;
+  margin: 1px 1px;
+  padding: 0;
+  line-height: 100%;
+}
+#carCard2 {
+  /*width: 30%;*/
+  /*display: inline-block;*/
+
+  text-align: center;
+  margin: 1px 1px;
+  padding: 0;
+
+  line-height: 100%;
+}
+
+#carCard3 {
+  /*width: 30%;*/
+  /*display: inline-block;*/
+
+  text-align: center;
+  margin: 1px 1px;
+  padding: 0;
+
+  line-height: 100%;
+}
+.infoList {
+  background-color: #f48042;
+   border: 2px solid black;
+}
+.newClass {
+  /*background-color:   #efefef;*/
+  border: 5px solid black;
+}

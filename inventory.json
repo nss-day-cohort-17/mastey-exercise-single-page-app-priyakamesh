@@ -1,0 +1,34 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything.",
+      "logo": "http://images.autotrader.com/scaler/620/420/cms/images/cars/nissan/rogue/2014/oem/218293.jpg"
+    },
+    {
+      "make": "Honda",
+      "model": "Accord",
+      "year": "2010",
+      "price": "10000",
+      "description": "This is an awesome deal in Honda Accord with only 40000 miles on it. All weather tires."
+    },
+    {
+      "make": "BMW",
+      "model": "F30",
+      "year": "2015",
+      "price": "35000",
+      "description": "This is a fantastic car with only 80000 miles on it. All weather tires, Leather seats."
+    },
+    {
+      "make": "Nissan",
+      "model": "Altima",
+      "year": "2013",
+      "price": "13000",
+      "description": "The Altima is a capable sedan with a decent options list and a roomy, comfortable cabin.Forward emergency braking with adaptive cruise control"
+    }
+
+  ]
+}
